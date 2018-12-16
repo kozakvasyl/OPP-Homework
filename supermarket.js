@@ -25,12 +25,12 @@ var products = [
     new Supermarket('Ice cream', 'sweets', 100, 7, 'http://purepng.com/public/uploads/large/purepng.com-ice-creamfood-ice-cream-tasty-ice-taste-eat-cool-941524634657ahdj4.png'),
     new Supermarket('Caramel', 'sweets', 15, 8, 'https://megasvit.com/images/detailed/1/aromatizator-pischevoy-karamel.png'),
     new Supermarket('Pear', 'fruits', 14, 5, 'https://toppng.com/public/uploads/preview/pear-1152433679636jhckkez6.png'),
-    new Supermarket('Сandy', 'fruits', 15, 8, ''),
-    new Supermarket('Сandy', 'fruits', 15, 8, ''),
-    new Supermarket('Сandy', 'vegetables', 15, 8, ''),
-    new Supermarket('Сandy', 'vegetables', 15, 8, ''),
-    new Supermarket('Сandy', 'vegetables', 15, 8, ''),
-    new Supermarket('Сandy', 'vegetables', 15, 8, '')
+    new Supermarket('Orange', 'fruits', 43, 6, 'https://cdn.pixabay.com/photo/2016/02/23/17/40/fruit-1218154_960_720.png'),
+    new Supermarket('Plum', 'fruits', 128, 4, 'http://pngimg.com/uploads/plum/plum_PNG8674.png'),
+    new Supermarket('Onion', 'vegetables', 35, 2, 'http://www.pngmart.com/files/1/Red-Onion-PNG-HD.png'),
+    new Supermarket('Cucumber', 'vegetables', 23, 5, 'http://pngimg.com/uploads/cucumber/cucumber_PNG12628.png'),
+    new Supermarket('Obergeen', 'vegetables', 39, 11, 'http://www.pngall.com/wp-content/uploads/2016/06/Aubergine-Transparent.png'),
+    new Supermarket('Tomato', 'vegetables', 37, 7, 'https://vignette.wikia.nocookie.net/battlefordreamisland/images/0/0c/Tomato.PNG/revision/latest?cb=20170825141241')
 ];
 
 
