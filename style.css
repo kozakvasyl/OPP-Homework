@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .itemStyle {
@@ -19,6 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 20%;
 }
 
 img {
