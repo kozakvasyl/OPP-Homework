@@ -20,12 +20,17 @@ var products = [
     new Supermarket('Potato', 'vegetables', 9, 7, 'https://www.freepngimg.com/thumb/potato/5-2-potato-png-clipart-thumb.png'),
     new Supermarket('Cake', 'sweets', 2, 25, 'https://assimdoce.com.br/wp-content/uploads/2016/03/bolo.png'),
     new Supermarket('Сandy', 'sweets', 33, 19, 'https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/10/19171518/Candy-Vector-Free-Transparent.png'),
-    new Supermarket('Сhery', 'sweets', 30, 5, 'https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Fruit-PNG/Cherries_PNG_Clipart_Picture-1848659855.png?m=1434276910'),
+    new Supermarket('Сhery', 'fruits', 30, 5, 'https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Fruit-PNG/Cherries_PNG_Clipart_Picture-1848659855.png?m=1434276910'),
     new Supermarket('Roll', 'sweets', 21, 6, 'https://www.cobsbread.com/drive/uploads/2018/01/cobs-product-white-bun-650x458.png'),
-    new Supermarket('Сandy', 'sweets', 15, 8, ''),
-    new Supermarket('Сandy', 'sweets', 15, 8, ''),
-    new Supermarket('Сandy', 'sweets', 15, 8, ''),
-    new Supermarket('Сandy', 'sweets', 15, 8, ''),
+    new Supermarket('Ice cream', 'sweets', 100, 7, 'http://purepng.com/public/uploads/large/purepng.com-ice-creamfood-ice-cream-tasty-ice-taste-eat-cool-941524634657ahdj4.png'),
+    new Supermarket('Caramel', 'sweets', 15, 8, 'https://megasvit.com/images/detailed/1/aromatizator-pischevoy-karamel.png'),
+    new Supermarket('Pear', 'fruits', 14, 5, 'https://toppng.com/public/uploads/preview/pear-1152433679636jhckkez6.png'),
+    new Supermarket('Сandy', 'fruits', 15, 8, ''),
+    new Supermarket('Сandy', 'fruits', 15, 8, ''),
+    new Supermarket('Сandy', 'vegetables', 15, 8, ''),
+    new Supermarket('Сandy', 'vegetables', 15, 8, ''),
+    new Supermarket('Сandy', 'vegetables', 15, 8, ''),
+    new Supermarket('Сandy', 'vegetables', 15, 8, '')
 ];
 
 
