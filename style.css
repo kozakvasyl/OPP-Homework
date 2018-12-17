@@ -24,7 +24,7 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 200px;
     height: 200px;
     margin: 5px 0px;
 }
@@ -45,4 +45,8 @@ button {
     height: 60px;
     width: 10%;
     margin: 0px 15px;
+}
+
+.hidden {
+    display: none;
 }
