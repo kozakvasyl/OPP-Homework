@@ -53,26 +53,59 @@ function render() {
         boxBill.classList.add('billStyle');
         boxBill.insertAdjacentText('afterbegin', 'All bill: ' + products[i].bill() + 'grn');
         boxProducts.appendChild(boxBill);
+
+        if (products[i].place === 'fruits') {
+            
+        }
  
     };
 };
 render();
+var hiddenSweets = document.getElementsByClassName('market-sweets');
+var hiddenVegetables = document.getElementsByClassName('market-vegetables');
+var hiddenFruits = document.getElementsByClassName('market-fruits');
 
-/* var buttonFruits = document.getElementsByClassName('fruits')[0];
-buttonFruits.addEventListener("click", function(){
-   var hiddenSweets = document.getElementsByClassName('market-sweets');
-   var hiddenVegetables = document.getElementsByClassName('market-vegetables');
+
+var buttonFruits = document.getElementsByClassName('fruits')[0];
+buttonFruits.addEventListener('click', function(){
+    for(var i = 0; i < hiddenFruits.length; i++) {
+        hiddenFruits[i].style.display = 'flex';
+    }
    for(var i = 0; i < hiddenSweets.length; i++) {
         hiddenSweets[i].style.display = 'none';
     }
    for(var i = 0; i < hiddenVegetables.length; i++) {
         hiddenVegetables[i].style.display = 'none';
     }
-}); */
+});
 
+var buttonSweets = document.getElementsByClassName('sweets')[0];
+buttonSweets.addEventListener('click', function(){
+    for(var i = 0; i < hiddenSweets.length; i++) {
+        hiddenSweets[i].style.display = 'flex';
+    }
+    for(var i = 0; i < hiddenFruits.length; i++) {
+        hiddenFruits[i].style.display = 'none';
+    }
+    for(var i = 0; i < hiddenVegetables.length; i++) {
+         hiddenVegetables[i].style.display = 'none';
+    }
+ });
 
+var buttonVegetables = document.getElementsByClassName('wegetables')[0];
+buttonVegetables.addEventListener('click', function(){
+    for(var i = 0; i < hiddenVegetables.length; i++) {
+        hiddenVegetables[i].style.display = 'flex';
+   }
+    for(var i = 0; i < hiddenFruits.length; i++) {
+        hiddenFruits[i].style.display = 'none';
+    }
+    for(var i = 0; i < hiddenSweets.length; i++) {
+        hiddenSweets[i].style.display = 'none';
+    }
+ });
 
-var fiveElement = document.createElement('div');
+/* var fiveElement = document.createElement('div');
 var containerHidden = market.appendChild(fiveElement);
 containerHidden.hidden = true;
 
@@ -84,9 +117,4 @@ buttonFruits.addEventListener("click", function(){
         containerHidden.appendChild(hiddenSweets[i]);
         containerHidden.appendChild(hiddenVegetables[i]);
     }
-});
-
-
-var buttonSweets = document.getElementsByClassName('sweets')[0];
-var buttonWegetables = document.getElementsByClassName('wegetables')[0];
-
+}); */
