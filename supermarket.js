@@ -29,13 +29,12 @@ var products = [
     new Supermarket('Potato', 'vegetables', 9, 7, 'https://www.freepngimg.com/thumb/potato/5-2-potato-png-clipart-thumb.png'),
     new Supermarket('Onion', 'vegetables', 35, 2, 'http://www.pngmart.com/files/1/Red-Onion-PNG-HD.png'),
     new Supermarket('Cucumber', 'vegetables', 23, 5, 'http://pngimg.com/uploads/cucumber/cucumber_PNG12628.png'),
-    new Supermarket('Obergeen', 'vegetables', 39, 11, 'http://www.pngall.com/wp-content/uploads/2016/06/Aubergine-Transparent.png'),
+    new Supermarket('Aubergine', 'vegetables', 39, 11, 'http://www.pngall.com/wp-content/uploads/2016/06/Aubergine-Transparent.png'),
     new Supermarket('Tomato', 'vegetables', 37, 7, 'https://vignette.wikia.nocookie.net/battlefordreamisland/images/0/0c/Tomato.PNG/revision/latest?cb=20170825141241')
 ];
 
 var market = document.querySelector('.market');
 function render() {
-    
 
     for (var i = 0; i < products.length; i++) {
         var prod = document.createElement('div');
@@ -53,18 +52,13 @@ function render() {
         boxBill.classList.add('billStyle');
         boxBill.insertAdjacentText('afterbegin', 'All bill: ' + products[i].bill() + 'grn');
         boxProducts.appendChild(boxBill);
-
-        if (products[i].place === 'fruits') {
-            
-        }
- 
     };
 };
 render();
+
 var hiddenSweets = document.getElementsByClassName('market-sweets');
 var hiddenVegetables = document.getElementsByClassName('market-vegetables');
 var hiddenFruits = document.getElementsByClassName('market-fruits');
-
 
 var buttonFruits = document.getElementsByClassName('fruits')[0];
 buttonFruits.addEventListener('click', function(){
@@ -104,17 +98,3 @@ buttonVegetables.addEventListener('click', function(){
         hiddenSweets[i].style.display = 'none';
     }
  });
-
-/* var fiveElement = document.createElement('div');
-var containerHidden = market.appendChild(fiveElement);
-containerHidden.hidden = true;
-
-var buttonFruits = document.getElementsByClassName('fruits')[0];
-buttonFruits.addEventListener("click", function(){
-    var hiddenSweets = document.getElementsByClassName('market-sweets');
-    var hiddenVegetables = document.getElementsByClassName('market-vegetables');
-    for(var i = 0; i < hiddenSweets.length; i++) {
-        containerHidden.appendChild(hiddenSweets[i]);
-        containerHidden.appendChild(hiddenVegetables[i]);
-    }
-}); */

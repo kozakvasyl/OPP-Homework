@@ -20,12 +20,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 20%;
+    flex-basis: 15%;
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 5px 0px;
 }
 
