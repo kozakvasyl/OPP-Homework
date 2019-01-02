@@ -82,7 +82,7 @@ buttonSweets.addEventListener('click', function(){
         hiddenFruits[i].style.display = 'none';
     }
     for(var i = 0; i < hiddenVegetables.length; i++) {
-         hiddenVegetables[i].style.display = 'none';
+        hiddenVegetables[i].style.display = 'none';
     }
  });
 
