@@ -61,6 +61,18 @@ var hiddenVegetables = document.getElementsByClassName('market-vegetables');
 var hiddenFruits = document.getElementsByClassName('market-fruits');
 
 var buttonFruits = document.querySelector('.fruits');
+var buttonSweets = document.querySelector('.sweets');
+var buttonVegetables = document.querySelector('.wegetables');
+
+class renderHidden {
+    constructor(hiddenElements, buttonElements) {
+        this.hiddenElements = hiddenElements;
+        this.buttonElements = buttonElements;
+    }
+}
+
+
+
 buttonFruits.addEventListener('click', function(){
     for(var i = 0; i < hiddenFruits.length; i++) {
         hiddenFruits[i].style.display = 'flex';
@@ -73,7 +85,7 @@ buttonFruits.addEventListener('click', function(){
     }
 });
 
-var buttonSweets = document.querySelector('.sweets');
+
 buttonSweets.addEventListener('click', function(){
     for(var i = 0; i < hiddenSweets.length; i++) {
         hiddenSweets[i].style.display = 'flex';
@@ -86,7 +98,7 @@ buttonSweets.addEventListener('click', function(){
     }
  });
 
-var buttonVegetables = document.querySelector('.wegetables');
+
 buttonVegetables.addEventListener('click', function(){
     for(var i = 0; i < hiddenVegetables.length; i++) {
         hiddenVegetables[i].style.display = 'flex';
