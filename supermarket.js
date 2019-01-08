@@ -56,57 +56,41 @@ function render() {
 };
 render();
 
-var hiddenSweets = document.getElementsByClassName('market-sweets');
-var hiddenVegetables = document.getElementsByClassName('market-vegetables');
-var hiddenFruits = document.getElementsByClassName('market-fruits');
-
-var buttonFruits = document.querySelector('.fruits');
-var buttonSweets = document.querySelector('.sweets');
-var buttonVegetables = document.querySelector('.wegetables');
-
+//..........events for button!!!!!!!...........
 class renderHidden {
     constructor(hiddenElements, buttonElements) {
         this.hiddenElements = hiddenElements;
         this.buttonElements = buttonElements;
     }
 }
-
-
-
-buttonFruits.addEventListener('click', function(){
-    for(var i = 0; i < hiddenFruits.length; i++) {
-        hiddenFruits[i].style.display = 'flex';
+renderHidden.prototype.hidden = function(hiddenElements) {
+    for(var i = 0; i < this.hiddenElements.length; i++) {
+        this.hiddenElements[i].style.display = 'none';
     }
-   for(var i = 0; i < hiddenSweets.length; i++) {
-        hiddenSweets[i].style.display = 'none';
+}
+renderHidden.prototype.visible = function(hiddenElements) {
+    for(var i = 0; i < this.hiddenElements.length; i++) {
+        this.hiddenElements[i].style.display = 'flex';
     }
-   for(var i = 0; i < hiddenVegetables.length; i++) {
-        hiddenVegetables[i].style.display = 'none';
-    }
+}
+
+var fruits = new renderHidden(document.getElementsByClassName('market-fruits'), document.querySelector('.fruits'));
+var sweets = new renderHidden(document.getElementsByClassName('market-sweets'), document.querySelector('.sweets'));
+var vegetables = new renderHidden(document.getElementsByClassName('market-vegetables'), document.querySelector('.wegetables'));
+
+fruits.buttonElements.addEventListener('click', function() {
+    fruits.visible();
+    sweets.hidden();
+    vegetables.hidden();
+});
+sweets.buttonElements.addEventListener('click', function() {
+    sweets.visible();
+    fruits.hidden();
+    vegetables.hidden();
+});
+vegetables.buttonElements.addEventListener('click', function() {
+    vegetables.visible();
+    fruits.hidden();
+    sweets.hidden();
 });
 
-
-buttonSweets.addEventListener('click', function(){
-    for(var i = 0; i < hiddenSweets.length; i++) {
-        hiddenSweets[i].style.display = 'flex';
-    }
-    for(var i = 0; i < hiddenFruits.length; i++) {
-        hiddenFruits[i].style.display = 'none';
-    }
-    for(var i = 0; i < hiddenVegetables.length; i++) {
-        hiddenVegetables[i].style.display = 'none';
-    }
- });
-
-
-buttonVegetables.addEventListener('click', function(){
-    for(var i = 0; i < hiddenVegetables.length; i++) {
-        hiddenVegetables[i].style.display = 'flex';
-   }
-    for(var i = 0; i < hiddenFruits.length; i++) {
-        hiddenFruits[i].style.display = 'none';
-    }
-    for(var i = 0; i < hiddenSweets.length; i++) {
-        hiddenSweets[i].style.display = 'none';
-    }
- });
